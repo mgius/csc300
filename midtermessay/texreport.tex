@@ -1,0 +1,54 @@
+% CSC 300: Professional Responsibilities
+% Dr. Clark Turner
+
+% Two Column Format 
+\documentclass[11pt]{article}
+%this allows us to specify sections to be single or multi column so that things like title page and table of contents are single column 
+\usepackage{multicol}  
+
+\usepackage{setspace}
+\usepackage{url}
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{letterpaper} 
+
+
+\begin{document}
+
+David Lorge Parnas and Paul C Clements' paper, ``A Rational Design Process: How and Why to Fake it,'' introduces a number of concepts that are also strongly present in the ACM Software Engineering Code of Ethics and Professional Practice.
+
+\section{SE Code 3.11}
+``Ensure adequate documentation, including significant problems discovered and solutions adopted, for any project on which they work.'' \cite{secode}
+
+Parnas and Clements discuss the role of documentation in section 6 of their paper.  They focus primarily on documentation practices that they believe result in bad documentation.  Specifically, they cover \emph{Poor Organization}, \emph{Boring Prose}, \emph{Confusing and Inconsistent Terminology} and \emph{Myopia}.  Each of these categories of bad documentation are at odds with section 3.11 of the SE Code.  
+
+\emph{Poor Organization} and \emph{Myopia} are somewhat related.  Poor Organization is described as providing too much detail about the behavior and execution of code, referred to by Parnas and Clements as "stream of execution" documentation.  Although such level of documentation could be considered ``adequate'', it is also tiresome to read and difficult to maintain \cite{fakeit}.  Myopic documentation focuses on a specific, very obscure behavior about the code that is useful only after obtaining a deeper understanding of the code.  Myopic documentation runs contrary to the SE Code's suggestion of "significant problems \ldots and solutions."  Although myopia is generally bad, I would not assert that it is always bad.  It can be helpful after writing a particularly nasty piece of code that appears to be the result of a looming dealing to note that the seemingly bad piece of code is \emph{intentional}, forcing a stranger to the code to consider the myopic advice before attempting to improve the code.
+
+\emph{Boring Prose} would hopefully involve a significant problem or solution, but in the ideal programming environment that Parnas and Clements would have us emulate, such long form documentation would be better suited for a larger design document. \emph{Confusing and Inconsistent Terminology} would cause documentation to be inadequate.
+
+\subsection{Inadequate Coverage in CSC Curriculum}
+Documentation is given lip service in the CSC curriculum.  Documentation is generally not required, and when documentation is required it is rarely graded on its helpfulness, but rather on its presense.  In CSC102, every method and class is required to have full JavaDoc style documentation \cite{mammenjavadoc}, with documentation levels bordering on and entering into \emph{Boring Prose}.  In CPE308/309 (intro to software engineering) students are introduced to the waterfall design process and tasked with writing a requirements document \cite{fisherrequirementsdoc}, but many students do not accept the requirements document as a necessary part of the course and eventually abandon the document altogether during the implementation phase.  Most other classes have no formal documentation requirements save for a project-level comment containing formalities such as assignment number and student name.  
+
+\section{SE Code 3.01}
+``Strive for high quality, acceptable cost and a reasonable schedule, ensuring significant tradeoffs are clear to and accepted by the employer and the client, and are available for consideration by the user and the public.'' \cite{secode}
+
+In other words, strike a balance between Quality, Cost, and Time.  Or, as is often quipped: ``Fast, Cheap, or Good.  Choose Two'' \cite{ProjectTriangle}.
+
+Parnas and Clements discuss these tradeoffs in section 2. A loss of time occurs when the ``customers'' of a particular piece of software change their mind or were unable to expres their desires at the start of the project, as mentioned in point 1.  At this time, the engineers in charge of the project must work with the customer to adjust expectations about cost and time.  Point 5 of section 2 states that humans are fallable, and unless humans are removed from the software process errors will be present, affecting quality and long term cost. 
+
+\section{SE Code 3.08}
+``Ensure that specifications for software on which they work have been well documented, satisfy the users’ requirements and have the appropriate approvals.'' \cite{secode}
+
+The bulk of Parnas and Clements' paper describes the process of creating documentation under an ideal system.  The majority of section 5 consists of a detailed explanation of understanding and documenting every aspect of the system.  Near the end of the section, Implementation is covered in a single paragraph, stressing the authors' point that the final set of documentation should appear as though designed by a perfect team, even if the actual process wasn't perfect.
+
+\newpage
+
+%cite all the references from the bibtex you haven't explicitly cited
+\nocite{*}
+
+\bibliographystyle{IEEEannot}
+
+\bibliography{texreport}
+
+\end{document}
