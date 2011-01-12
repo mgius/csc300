@@ -48,17 +48,21 @@ print: $(MAIN).ps
 	lpr -h $(MAIN).ps
 
 %.dvi:  %.tex $(TEXFILES)
+
+ifdef BIBFILES
+	@echo "  Running LaTeX"
+	$(LATEX) $<
 	@echo "  Running BibTeX"
-	@echo "	Running LaTeX"
+	bibtex $(BIBFILES)
+endif
+
+	@echo "	Running LaTeX until complete"
 	@if latex $< | tee /dev/tty | fgrep -is rerun; then 	\
 		echo "	Rerunning LaTeX";			\
 		while $(LATEX) $< | fgrep -is rerun; do    \
 			echo "  Re-Rerunning LaTeX";            \
 		done;                                           \
 	fi
-	bibtex $(BIBFILES)
-	$(LATEX) $<
-	$(LATEX) $<
 
 %.ps: %.dvi
 	$(PS) $(PSFLAGS) $(MAIN).dvi > $(MAIN).ps
