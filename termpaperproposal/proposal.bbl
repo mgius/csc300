@@ -1,0 +1,85 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{#1}
+\csname url@rmstyle\endcsname
+\providecommand{\newblock}{\relax}
+\providecommand{\bibinfo}[2]{#2}
+\providecommand\BIBentrySTDinterwordspacing{\spaceskip=0pt\relax}
+\providecommand\BIBentryALTinterwordstretchfactor{4}
+\providecommand\BIBentryALTinterwordspacing{\spaceskip=\fontdimen2\font plus
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
+  \fontdimen4\font\relax}
+\providecommand\BIBforeignlanguage[2]{{%
+\expandafter\ifx\csname l@#1\endcsname\relax
+\typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
+\typeout{** loaded for the language `#1'. Using the pattern for}%
+\typeout{** the default language instead.}%
+\else
+\language=\csname l@#1\endcsname
+\fi
+#2}}
+
+\bibitem{AmazonDTPContentGuidelines}
+``Amazon dtp support: Content guidlines,''
+  \url{http://forums.digitaltextplatform.com/dtpforums/entry.jspa?externalID=1%
+22&categoryID=27}, retrieved 2011, January 16.
+
+
+\bibitem{AmazonIRFAQ}
+``Amazon.com investor relations: Faq,''
+  \url{http://phx.corporate-ir.net/phoenix.zhtml?c=97664&p=irol-faq#14296}.
+
+
+\bibitem{AmazonCorpGovernance}
+``Amazon.com investor relations: Faq,''
+  \url{http://phx.corporate-ir.net/phoenix.zhtml?c=97664&p=irol-faq#14296}.
+
+
+\bibitem{BOEvsPico}
+``Board of education v. pico, 457 u.s. 853 (1982),''
+  \url{http://laws.findlaw.com/us/457/853.html}.
+
+
+\bibitem{createspaceContentGuidelines}
+``Createspace content guidelines,''
+  \url{https://www.createspace.com/Help/Rights/ContentGuidelines.jsp},
+  retrieved 2011, January 16.
+
+
+\bibitem{AmazonLolitaDTPListing}
+``Lolita ebook: Vladimir nabokov: Kindle store,''
+  \url{http://www.amazon.com/Lolita-ebook/dp/B003WUYRB8/ref=sr_1_1?ie=UTF8&m=A%
+G56TWVU5XWC2&s=digital-text}, retrieved 2011, January 20.
+
+
+\bibitem{createspaceMemberAgreement}
+``Member agreement,'' \url{https://www.createspace.com/MemberAgreement.jsp},
+  retrieved 2011, January 16.
+
+
+\bibitem{secode}
+{ACM/IEEE-CS joint task force on Software Engineering Ethics and Professional
+  Practices}, ``Software engineering code of ethics and professional
+  practice,'' 1999.
+
+
+\bibitem{KittSelfPubRevolution}
+S.~Kitt, ``Amazon in the book banning business,''
+  \url{http://theselfpublishingrevolution.blogspot.com/2010/12/amazon-in-book-%
+banning-business.html}, retrieved 2011, January 16.
+
+
+\bibitem{ShermanAmazonExecs}
+E.~Sherman, ``Amazon execs can’t define porn, but they know it when they see
+  it,''
+  \url{http://www.bnet.com/blog/technology-business/amazon-execs-can-8217t-def%
+ine-porn-but-they-know-it-when-they-see-it/7781}, retrieved 2011, January 20.
+
+
+\bibitem{TechCrunchAmazonCensorship}
+M.~Siegler, ``The 158,221st best-selling kindle book: The pedophile’s guide
+  to love and pleasure,''
+  \url{http://techcrunch.com/2010/11/10/kindle-pedophile-book/}, retrieved
+  2011, January 20.
+
+
+\end{thebibliography}
