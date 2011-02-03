@@ -33,33 +33,33 @@ Dr. Clark Turner \vspace{10pt} \\
 %%% Known Facts  %%%
 %%%%%%%%%%%%%%%%%%%%
 \section{Facts}
-\begin{itemize}
-\item Amazon and it's subsidiaries' Member and Content Agreements clearly state that published content can be removed at any time for any reason. \cite{createspaceMemberAgreement} \cite{createspaceContentGuidelines} \cite{AmazonDTPContentGuidelines}
 
-\item Amazon/Createspace, as a private entity, is not bound by the First Amendment.
+\begin{itemize}
+
+\item Amazon and it's subsidiaries' Member and Content Agreements clearly state that published content can be removed at any time for any reason. \cite{CreateSpaceMemberAgreement} \cite{CreateSpaceContentGuidelines} \cite{AmazonDTPContentGuidelines}
+
+\item Amazon/CreateSpace, as a private entity, is not bound by the First Amendment.
 
 \item Amazon has not publically confirmed their reasons for de-listing books. Postings by affected authors state that books were de-listed for violations of content policy. \cite{KittSelfPubRevolution} 
 
 \item Amazon lists and continues to sell titles that contain content similar to titles that have been de-listed. \cite{AmazonLolitaDTPListing}
 
-\item After de-listing ``The Pedophile's Guide to Love and Pleasure,'' Amazon stated: \\
-      ``Amazon believes it is censorship not to sell certain books simply because we or others believe their message is objectionable.  Amazon does not support or promote hatred or criminal acts, however, we do support the right of every individual to make their own purchasing decisions.'' \cite{TechCrunchAmazonCensorship}
+\item After de-listing ``The Pedophile's Guide to Love and Pleasure,'' Amazon stated: \ censorship not to sell certain books simply because we or others believe their message is objectionable.  Amazon does not support or promote hatred or criminal acts, however, we do support the right of every individual to make their own purchasing decisions.'' \cite{TechCrunchAmazonCensorship}
 
 \end{itemize}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Research Question %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Research Question}
 Are the recent content removals from Amazon catalogs due to ``offensive'' content ethical?
 
 \section{SE Code Analysis}
 
-In the proceeding sections, there may be some mixing of the companies Amazon and Createspace, especially in the context of quoted elements.  Createspace is a fully-owned subsidiary of Amazon, providing self-publishing services for authors.  In general, I will refer to both entities as Amazon for simplicity.
+In the proceeding sections, there may be some mixing of the company names Amazon and CreateSpace, especially in the context of quoted elements.  CreateSpace is a fully-owned subsidiary of Amazon, providing self-publishing services for authors.  In general, I will refer to both entities as Amazon for simplicity, unless reason exists to distinguish them.
 
-\subsection{Amazon's Content Policy is Unethical because it is vague and applied inconsistently}
+\subsection{Amazon's Content Policy is Unethical}
 
-As stated in the facts section, Amazon has removed certain books from their bookstore.  Amazon has not publically stated their reason for removing titles from their service, but affected authors have reported their interactions with Amazon customer relations and offered their thoughts on the matter.  Based on information available, Amazon appears to have removed titles based upon their content policy.  Specifically, the policy prohibits, among other things:
+As stated in the facts section, Amazon has removed certain books from their bookstore.  Amazon has not publically stated their reason for removing titles from their service, but affected authors have reported their interactions with Amazon customer relations and offered their thoughts on the matter.  Based on information available, Amazon appears to have removed titles based upon their content policy.  There are actually two content policies that may be applicable.  The first is for the Kindle publishing platform \cite{AmazonDTPContentGuidelines}, and the second is for CreateSpace \cite{CreateSpaceContentGuidelines}.  The Kindle policy is a less expansive than CreateSpace's and most of the authors that have found themselves de-listed appear to be customers of CreateSpace, so I will focus of CreateSpace's policy.
+
+CreateSpace's policy prohibits, among other things:
 
 \begin{itemize}
 \item[Pornography] \hfill \\
@@ -69,53 +69,65 @@ As stated in the facts section, Amazon has removed certain books from their book
 
 \end{itemize}
 
-The first prohibition is fairly clear and specific.  Definitions of pornography can vary, but there are clear precedents in court to help determine what is and is not pornographic \cite{MillerVsCA}.  In any case, the policy is almost in place to restrict content on Amazon's video publishing service. 
+The first prohibition is clear and specific.  Definitions of pornography can vary, but there are clear precedents that have been established to help determine what is and is not pornographic \cite{MillerVsCA}.  In any case, the policy is almost in place to restrict content on Amazon's video publishing service, not their book publishing service.  
 
-The second prohibition is far more broad, which has led to some confusion
+The second prohibition is significantly less specific. This can lead to confusion of the part of authors and those who must enforce the content policy. This policy, due to it's vague writing, could be considered to be in opposition to SE Code Tenet 8.03:
 
-%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Extant Arguments from External Sources %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%
-%\section{Extant arguments}
-%Erik Sherman, a writer for BNET, believes that Amazon's current public policy is too vague to be helpful to authors, which will ``[allow] individual employees to, intentionally or not, create their own versions of corporate strategy.'' He thinks that Amazon's policy on Pornography and Offensive Material should be clarified. \cite{ShermanAmazonExecs}
-%
-%Selena Kitt, a well known author in the Erotic literature community with about a dozen published novels, had several of her novels de-listed in December.  She is of the opinion that if Amazon published clear guidelines and enforced them consistently, then the issue would be moot.  She is primarily unhappy with the inconsistency of enforcement and vagueness of Amazon's policies. \cite{KittSelfPubRevolution}
-%
-%General opinion of various bloggers and opinion writers is that Amazon should not censure books, but if they choose to remove books from their store it should be the result of a clear and public policy that is consistently enforced. General opinion is also that Amazon is well within legal rights to remove content from their store.
-%
-%%%%%%%%%%%%%%%%
-%%% Analytic principles %%%
-%%%%%%%%%%%%%%%%
-\section{Applicable analytic principles}
-\begin{itemize}
-\item SE Code Section 8.07 says that we should ``Not give unfair treatment to anyone because of any irrelevant prejudices.'' \cite{secode}
+\emph{SE Code 8.03}: Improve their ability to produce \underline{accurate}, informative, and well-written \underline{documentation}. 
 
-\item SE Code Section 8.03 and 3.12 concern the writing of accurate documenation. \cite{secode}
+Let us think of this content policy to be ``documentation'' for the self-publishing platform, where the content policy defines valid and invalid inputs for publishing content on Amazon.  ``Accurate'' is another way of saying ``specific.''  Thus if we rewrite the SE Code to more closely match our system, we are left with the following:
 
-\item ``Our vision is to be earth's most customer centric company; to build a place where people can come to find and discover anything they might want to buy online.'' Amazon Mission Statement can be interpreted as a corporate philosophy, which recent actions seem to contradict. \cite{AmazonIRFAQ}
+\emph{Substituted SE Code 8.03}: Produce specific, informative, and well written content policy.
 
-\item Amazon's Corporate Governance states that the company shall ``Make bold investment decisions in light of long-term leadership considerations rather than short-term profitability considerations.'' \cite{AmazonCorpGovernance}
+As it stands, Amazon's policy is not specific.  It is currently impossible for a user of the system to know for sure whether or not a given set of inputs is valid short of trial and error.  The acceptable content policy is incomplete and ambigous, which leads to user frustration.
 
-\item The first amendment to the United States Constitution has often been used to defend controversial material from censorship.  ``Local school boards may not remove books from school library shelves simply because they dislike the ideas contained in those books\ldots'' \cite{BOEvsPico}
+\begin{tabular}{| l |}
+\hline
+\emph{SE Code 8.03}: Accurate Documentation \\
+\emph{Amazon's Actions}: Unethical \\
+\hline
+\end{tabular}
 
-\item The moral action is that which results in the greatest utility (happiness).  Utilitarian viewpoint.
+If we consider these content guidelines as a ``specification'' for the self-publishing process, an easy comparison considering their effect on valid inputs to the publishing process, the guidelines would most likely be at odds with SE Code Tenet 3.08:
 
-\end{itemize}
+\emph{SE Code 3.08}: ensure that \underline{specifications} for \underline{software} on which they work have been well documented\ldots 
 
-%%%%%%%%%%%%%%%%
-%%% Abstract your Expected Analysis %%%
-%%%%%%%%%%%%%%%%
-\section{Abstract of Expected Analysis}
-Overall, de-listing works causes less ``utility'' than leaving them up.  When a title is de-listed, persons who would have enjoyed the work can no longer do so, and may even become significantly more unhappy.  Those who already read it will be unhappy that the book is no longer available.  The author is robbed of income and prestige, and the publisher also receives less money as a result.  De-listing will make a certain number of persons happier, due to their ``victory'' in the matter, but that happiness is less than the unhappiness caused by the de-listing.  Despite this, in the event of illegal material Amazon would be correct in de-listing a piece of content.
 
-Amazon, although not legally bound by the First Amendment's protections for Speech and Publishing, should strive to uphold those rights regardless of legal obligations.  Amazon should seek to implement the vision of head of Amazon's Kindle business, Russ Grandinetti ``[to make] every book ever written, in any language, in print or out of print, all available within 60 seconds. And we want to make the customer experience great.'' This would make Amazon's policy consistent with SE Code 8.07.  Alternatively, Amazon must provide clear and concise content guidelines and enforce them consistently, which would be consistent with the clear documentation guidelines from SE Code 8.03 and 8.12.
+As mentioned before, ``specifications'' can be related to our ``content guidelines.''  It is important that these content guidelines be well documented so that customers of the self-publishing system won't be caught off guard by the content guidelines.  Our software in question is the self-publishing system that Amazon/Createspace provide to the public.
 
-These recent content removals are unethical because they cause a great deal of harm.  Amazon, as one of the largest and most influential publishers/vendors of books, should be held to an even higher ethical standard because they set trends in the market and often set precedent that other publishers/vendors follow.
+\emph{Substituted SE Code 3.08}: ensure that content guidelines for the self-publishing system on which they work have been well documented\ldots
+
+The current set of content guidelines are not well-documented.  Based on the inconsistent application of the current set of the guidelines, it would not be possible for a set of developers to re-implement the system.
+
+\begin{tabular}{| l |}
+\hline
+\emph{SE Code 3.08}: Well Documented Specifications \\
+\emph{Amazon's Actions}: Unethical \\
+\hline
+\end{tabular}
+
+Astute readers may have noticed that I left a portion of Tenet 3.08 out.  The remainder of the tenet concerns satisfying the users' requirements. This point is tricky, because there are conflicting sets of users in this scenario.  
+
+The first group of users are the end-users of the self-publishing system.  For the most part, these end-users are completely unaffected by the content guidelines.  The vast majority of titles on Amazon, self published or not, are nowhere near violating any of the content guidelines.  A small portion of these users will nudge up against the content guidelines, and for this subset of users the self-publishing system may not satisfy the users' requirements.
+
+The second group of users are the purchasers of content.  Again, the vast majority of these users are not interested in content that could potentially be in violation of the content guidelines.  
+
+It's difficult to make a firm judgement about whether or not Amazon has acted unethically in regards to satisfying their users.  However, we can examine a statement from Russ Grandinetti, the Vice President of Amazon's Kindle Content division.
+
+``Our vision is [to make] every book ever written, in any language, in print or out of print, all available within 60 seconds.'' \cite{LATimesRussQuote}
+
+We can also examine Amazon's Mission Statement. Emphasis mine.
+
+``Our vision is to be earth's most customer centric company; to build a place where people can come to find and discover \emph{anything they might want to buy} online.'' \cite{AmazonIRFAQ}
+
+Based on these public statements, it appears as though Amazon has violated their users' specifications, and acted contrary to SE Code Tenet 3.08 in another way as well.
 
 \end{multicols}
 
+\newpage
+
 %cite all the references you want in your annotated bibliography that you cite in the paper
-\nocite{*}
+%\nocite{*}
 
 \bibliographystyle{IEEEannot}
 
