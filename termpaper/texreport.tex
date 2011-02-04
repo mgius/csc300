@@ -16,7 +16,7 @@
 
 \begin{document}
 
-\title{\vfill Term Paper Template} %\vfill gives us the black space at the top of the page
+\title{\vfill Censorship in Self-Publishing} %\vfill gives us the blank space at the top of the page
 \author{
 By Mark Gius\vspace{10pt} \\ 
 CSC 300: Professional Responsibilities\vspace{10pt} \\ 
@@ -27,9 +27,15 @@ Dr. Clark Turner\vspace{10pt} \\
 
 \maketitle
 
-\vfill  %in combinaion with \newpage this forces the abstract to the bottom of the page
+\vfill  %in combination with \newpage this forces the abstract to the bottom of the page
 \begin{abstract}
-5\%  One or two sentences of context about your issue.  Provide your focus question. Mention one or two relevant arguments.  Briefly explain your conclusion and why it is proper ethically. Should be no more than one paragraph (100 words max) \cite{handout}
+Amazon.com is one of the largest sellers of goods and services on the internet.  In 2003, Amazon acquired CreateSpace and BookSurge, which provide ``On-Demand'' publishing services for self-publishing authors. The rise of self publishing services like CreateSpace have lowered the bar for small authors to become published and listed on sites like Amazon. This has allowed more authors to attempt to make a living out of writing.
+
+Recently, a number of books published via CreateSpace and listed on Amazon.com have been removed from Amazon's listings and their Kindle book reader devices.  Public statements from Amazon's and accounts from authors who have had their books de-listed point to removal due to distaste for the content of the books. 
+
+Amazon, and other publishers and sellers of books, should be morally obligated to publish any book which is not strictly illegal, regardless of content.
+\vfill
+Full Disclosure: I am a current employee of CreateSpace, a fully owned subsidiary of Amazon and the publisher of several books that have been de-listed from Amazon's store. To the best of my knowledge, this paper contains no information that is not available to the public.
 \end{abstract}
 
 \thispagestyle{empty} %remove page number from title page
@@ -43,9 +49,6 @@ Dr. Clark Turner\vspace{10pt} \\
 
 \newpage
 
-%end the 1 column format
-
-
 %start 2 column format
 \begin{multicols}{2}
 %Start numbering first page of content as page 1
@@ -57,62 +60,145 @@ Dr. Clark Turner\vspace{10pt} \\
 
 \begin{itemize}
 
-\item General context of the issue 
-\item Only facts that clearly point to the issue/question at hand (you may add additional facts as needed in your analysis that aren't in your facts section) 
-\item The facts section should end up leading the reader to the question you are about to ask them (a controversy or a case ending poorly is a great way to do this). 
-\item Should not indicate anything about your answer to the question or hint at any particular conclusion.
-\cite{handout} 
+\item Amazon and it's subsidiaries' Member and Content Agreements clearly state that published content can be removed at any time for any reason. \cite{CreateSpaceMemberAgreement} \cite{CreateSpaceContentGuidelines} \cite{AmazonKDPContentGuidelines}
+
+\item Amazon/CreateSpace, as a private entity, is not bound by the First Amendment.
+
+\item Amazon has not publically confirmed their reasons for de-listing books. Postings by affected authors state that books were de-listed for violations of content policy. \cite{KittSelfPubRevolution} 
+
+\item Amazon lists and continues to sell titles that contain content similar to titles that have been de-listed. \cite{AmazonLolitaDTPListing}
+
+\item After de-listing ``The Pedophile's Guide to Love and Pleasure,'' Amazon stated: \ censorship not to sell certain books simply because we or others believe their message is objectionable.  Amazon does not support or promote hatred or criminal acts, however, we do support the right of every individual to make their own purchasing decisions.'' \cite{TechCrunchAmazonCensorship}
+
 \end{itemize}
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Research Question %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Research Question}
-One sentence (one question, not compound). Should be focused on a particular case. Should have a determinable yes or no answer that you will draw based on your research.  Should be followed (separately) by a paragraph explaining the importance of this question and its relevance to software engineers (why should we care?). \cite{handout}
+Are the recent content removals from Amazon catalogs due to ``offensive'' content ethical?
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Extant Arguments from External Sources %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Arguments For}
+% Based on sample papers  I think this section is going to need some severe
+% reworking
+\section{Arguments}
+
+\subsection{Amazon's actions are Unethical}
+
+\subsubsection{Selena Kitt}
+Selena Kitt, a well known author in the Erotic literature community with about a dozen published novels, had several of her novels de-listed in December.  She is of the opinion that if Amazon published clear guidelines and enforced them consistently, then the issue would be moot.  She is primarily unhappy with the inconsistency of enforcement and vagueness of Amazon's policies. \cite{KittSelfPubRevolution}
+
+\subsubsection{Erik Sherman}
+Erik Sherman, a writer for BNET, believes that Amazon's current public policy is too vague to be helpful to authors, which will ``[allow] individual employees to, intentionally or not, create their own versions of corporate strategy.'' He thinks that Amazon's policy on Pornography and Offensive Material should be clarified. \cite{ShermanAmazonExecs}
+
+% TODO: Find somebody who thinks amazon was in the right.  
+\section{Amazon's Actions are Ethical}
 \subsection{Arg 1}
-The first argument for your topic
-\subsection{Arg 2}
-The second argument for your topic...
-\section{Arguments Against}
-\subsection{Arg 1}
-The first argument against your topic.
+The first argument against your topic...
 \subsection{Arg 2}
 The second argument against your topic...
 
 %the * causes a section with no numbering also doesn't appear in the table of contents
-\subsubsection*{Requirements for the Arguments section(s) (from the handout)}
-Summarize the main arguments others have made about the answers to your focus question. Provide the state of research on your focus question. Must be referenced appropriately.  All statements must be a summary of the source's arguments, devoid of your opinions or biases on the issue. Must (separately) cover arguments on both sides of your issue - that is, those that answer your focus question affirmatively and those that answer negatively. \cite{handout}
+%\subsubsection*{Requirements for the Arguments section(s) (from the handout)}
+%Summarize the main arguments others have made about the answers to your focus question. Provide the state of research on your focus question. Must be referenced appropriately.  All statements must be a summary of the source's arguments, devoid of your opinions or biases on the issue. Must (separately) cover arguments on both sides of your issue - that is, those that answer your focus question affirmatively and those that answer negatively. \cite{handout}
 
 %%%%%%%%%%%%%%%%
 %%% Analysis %%%
 %%%%%%%%%%%%%%%%
 \section{Analysis}
+In the following analysis, there may be some mixing of the company names Amazon and CreateSpace, especially in the context of quoted elements.  CreateSpace is a fully-owned subsidiary of Amazon.  CreateSpace provides self-publishing services for authors.  In general, I will refer to both entities as Amazon for simplicity, unless reason exists to distinguish them.
+
+\subsection{Amazon's Content Policy Incompatible with ACM SE Code}
+
+Customers of Amazon's self-publishing service must agree with several service agreements before they are allowed to publish content.  Depending on their intended medium, they must agree to either CreateSpace's Content Guidelines \cite{CreateSpaceContentGuidelines} or the Kindle Direct Publishing Content Guidelines \cite{AmazonKDPContentGuidelines}.  Both sets of guidelines contain similar prohibitions against certain types of content.  The CreateSpace Content Guidelines are more specific and expansive that those for KDP, so the following analyses will focus on CreateSpace's.
+
+% TODO: Find a place for this
+%As stated in the facts section, Amazon has removed certain books from their bookstore.  Amazon has not publically stated their reason for removing titles from their service, but affected authors have reported their interactions with Amazon customer relations and offered their thoughts on the matter.  Based on information available, Amazon appears to have removed titles based upon their content policy.  There are actually two content policies covering book publishing on Amazon.  The first is for the Kindle publishing platform \cite{AmazonDTPContentGuidelines}, and the second is for CreateSpace \cite{CreateSpaceContentGuidelines}.  The Kindle policy is a less expansive than CreateSpace's and most of the authors that have found themselves de-listed appear to be customers of CreateSpace, so I will focus of CreateSpace's policy.
+
+CreateSpace's policy prohibits, among other things:
+
 \begin{itemize}
-   \item Should start with a paragraph showing why the SE Code applies to your focusquestion.
-   \item Sub-headings to delineate your lines of reasoning are required. 
-   \item All arguments must be thoroughly supported by reason and logic. 
-   \item All claims must be supported by reputable primary sources and formal data. 
-   \item SE Code must be central to the argumentation
-   \begin{itemize}
-      \item You should have 2-4 distinct sections of the SE code utilized in your analysis
-      \begin{itemize}
-         \item If section 1 is central to your argument, it is only one of the code sections covered. Do not rely solely on section one. Ex: 1.01-1.04 will not suffice for all of your SE Code based arguments and citations. 
-         \item If discussion about Òpublic goodÓ is used, there must be data to support it. Simply writing Òit benefits the general public because it would make many people happyÓ is insufficient.
-      \end{itemize}
-   \end{itemize}     
-   \item Utilitarian and deontological analysis must be present but not be separate sections 
-   \item Class reading must be referenced as appropriate (at least one paper must be used as the basis of one of the arguments). 
-   \item There should be a clear cohesiveness to the analysis such that each argument logically flows into the next and gently directs the reader toward your conclusion while implicitly providing answers to any doubts they may have through logic and data.
-   \item Opinions > dev/null. \cite{handout}  
+\item[Pornography] \hfill \\
+      ``Pornography, X-rated movies, home porn, hard-core material that depict graphic sexual acts, and amateur porn''
+\item[Offensive Material] \hfill \\
+      ``What we deem offensive is probably about what you would expect. This includes items such as crime-scene videos, videos of cruelty to animals, and extremely disturbing materials. CreateSpace reserves the right to determine the appropriateness of items sold on our site.''
+
 \end{itemize}
+
+The first prohibition is clear and specific.  Definitions of pornography can vary, but there are clear precedents that have been established to help determine what is and is not pornographic \cite{MillerVsCA}.  In any case, the wording in this policy appears to be directed at film publishers rather than book publishers.
+
+The second prohibition is significantly less specific. This can lead to confusion of the part of authors and those who must enforce the content policy.  This policy, due to it's vague writing, could be considered to be in opposition to ACM SE Code Tenet 8.03:
+
+\emph{SE Code 8.03}: Improve their ability to produce \underline{accurate}, informative, and well-written \underline{documentation}. 
+
+Let us think of this content policy to be ``documentation'' for the self-publishing platform, where the content policy defines valid and invalid inputs for publishing content on Amazon.  ``Accurate'' is another way of saying ``specific.''  If we rewrite the SE Code to more closely match our system, we are left with the following:
+
+\emph{Substituted SE Code 8.03}: Produce specific, informative, and well written content policy.
+
+As it stands, Amazon's policy is not specific.  It is currently impossible for a user of the system to know for sure whether or not a given set of inputs is valid short of trial and error.  The acceptable content policy is incomplete and ambiguous, which leads to user frustration.
+
+\begin{tabular}{| l |}
+\hline
+\emph{SE Code 8.03}: Accurate Documentation \\
+\emph{Amazon's Actions}: Unethical \\
+\hline
+\end{tabular}
+
+If we consider these content guidelines as a ``specification'' for the self-publishing process, an easy comparison considering their effect on valid inputs to the publishing process, the guidelines would most likely be at odds with SE Code Tenet 3.08:
+
+\emph{SE Code 3.08}: ensure that \underline{specifications} for \underline{software} on which they work have been well documented\ldots 
+
+
+As mentioned before, ``specifications'' can be related to our ``content guidelines.''  It is important that these content guidelines be well documented so that customers of the self-publishing system won't be caught off guard by the content guidelines.  Our software in question is the self-publishing system that Amazon/CreateSpace provide to the public.
+
+\emph{Substituted SE Code 3.08}: ensure that content guidelines for the self-publishing system on which they work have been well documented\ldots
+
+The current set of content guidelines are not well-documented.  Based on the inconsistent application of the current set of the guidelines, it would not be possible for a set of developers to re-implement the system.
+
+Astute readers may have noticed that Tenet 3.08 above was incomplete. The remainder of the tenet concerns satisfying the users' requirements. This point is tricky, because there are conflicting sets of users in this scenario.  
+
+% Next two paragraphs even required?
+The first group of users are the end-users of the self-publishing system.  For the most part, these end-users are completely unaffected by the content guidelines.  The vast majority of titles on Amazon, self published or not, are nowhere near violating any of the content guidelines.  A small portion of these users will nudge up against the content guidelines, and for this subset of users the self-publishing system may not satisfy the users' requirements.
+
+% This need a citation.  Definitely.
+The second group of users are the purchasers of content.  Again, the vast majority of these users are not interested in content that could potentially be in violation of the content guidelines.  \cite{CitationNeeded}
+
+The wide variety of users makes it difficult to determine who exactly Amazon's ``users'' might be.  However, we can examine a few statements from Amazon on the subject to see who Amazon considers it's ``users'' to be.  
+
+
+t's difficult to make a firm judgement about whether or not Amazon has acted unethically in regards to satisfying their users.  However, we can examine a statement from Russ Grandinetti, the Vice President of Amazon's Kindle Content division.
+
+``Our vision is [to make] every book ever written, in any language, in print or out of print, all available within 60 seconds'' --- Russ Grandinetti, Vice President of Amazon's Kindle Content division. \cite{LATimesRussQuote}
+
+``Our vision is to be earth's most customer centric company; to build a place where people can come to find and discover \emph{anything they might want to buy} online.'' --- Amazon's Mission Statement.  Emphasis Mine. \cite{AmazonIRFAQ}
+
+Based on these public statements, Amazon's ``users'' appear to be publishers of ``every book ever written'' and those looking for ``anything they might want to buy.The SE Code in question now reads:
+
+\emph{Fully Substituted SE Code 3.08}: ensure that content guidelines for the self-publishing system on which they work have been well documented and satisfy the requirements of publishers of every book ever written and those looking to buy anything.  
+
+Amazon is clearly not publishing every book ever written, nor are they providing ``anything'' that their customers might want to buy.  Amazon's actions are unethical because they are in conflict with SE Code 3.08.
+
+%\begin{itemize}
+%   \item Should start with a paragraph showing why the SE Code applies to your focusquestion.
+%   \item Sub-headings to delineate your lines of reasoning are required. 
+%   \item All arguments must be thoroughly supported by reason and logic. 
+%   \item All claims must be supported by reputable primary sources and formal data. 
+%   \item SE Code must be central to the argumentation
+%   \begin{itemize}
+%      \item You should have 2-4 distinct sections of the SE code utilized in your analysis
+%      \begin{itemize}
+%         \item If section 1 is central to your argument, it is only one of the code sections covered. Do not rely solely on section one. Ex: 1.01-1.04 will not suffice for all of your SE Code based arguments and citations. 
+%         \item If discussion about Òpublic goodÓ is used, there must be data to support it. Simply writing Òit benefits the general public because it would make many people happyÓ is insufficient.
+%      \end{itemize}
+%   \end{itemize}     
+%   \item Utilitarian and deontological analysis must be present but not be separate sections 
+%   \item Class reading must be referenced as appropriate (at least one paper must be used as the basis of one of the arguments). 
+%   \item There should be a clear cohesiveness to the analysis such that each argument logically flows into the next and gently directs the reader toward your conclusion while implicitly providing answers to any doubts they may have through logic and data.
+%   \item Opinions > dev/null. \cite{handout}  
+%\end{itemize}
 
 Look at Jason Anderson's how to write a term paper (currently linked as the paper template) for information on how to write this section.  An example of possible sections follows
 \subsection{Why the SE Code Applies}
