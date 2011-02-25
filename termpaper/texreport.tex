@@ -157,6 +157,16 @@ It would be foolish to assume that the content policy was written by software en
 
 In David Parnas and Paul Clements' paper, ``A Rational Design Process,'' Parnas and Clements discuss the nature of software design. \cite{fakeit} In particular, they discuss the nature of requirements specifications and what should be contained within them.  One of the elements of a proper requirements is a specification for Input/Output Interfaces and Specification Of Output Values.  Their description for the Specification of Output Values is of particular interest, and is defined as follows: ``For each output, a specification of its value in terms of the state and history of the system's environment.'' \cite{fakeit} In other words, based on the specifications every input should have an output that is defined. 
 
+Websters defines ``specification'' as ``a written description of an invention for which a patent is sought.'' \cite{WebsterOnlineDict}  US Title 35, Part II, Chapter 11 \S 112 states the following about the requirements for patents:
+
+{\addtolength{\leftskip}{6mm}
+
+The specification shall contain a written description of the invention, and of the manner and process of making and using it, in such full, clear, concise, and exact terms as to enable any person skilled in the art to which it pertains, or with which it is most nearly connected, to make and use the same, and shall set forth the best mode contemplated by the inventor of carrying out his invention.  \cite{Title35}
+
+}
+
+In other words, specifications are the instructions for how to ``build'' a piece of computer software.
+
 Amazon's self-publishing system accepts inputs from users in the form of the content of their books to be published.  The output of this system is a book that is sold on Amazon's site.  The Content Policy defines the set of acceptable inputs to the self-publishing system.  Content that is in violation of the input constraints should be rejected as invalid input.  The Content Policy for the self-publishing system defines the input specification for the self-publishing system. 
 
 The users of the self-publishing system are authors and other content creators who are interested in self-publishing their book through Amazon's self-publishing software.  For the most part, these end-users are completely unaffected by the content guidelines.  A small portion of the overall population of users will nudge up against the content guidelines, and for this subset of users the self-publishing system may not satisfy the users' requirements.
@@ -183,6 +193,22 @@ Amazon is also clearly not publishing every book ever written, because some book
 
 In it's current state, Amazon's Content Policy is in conflict with SE Code Tenet 3.08 because the Content Policy does not provide a clear specification for user input and does not meet the requirements of its users.  The Content Policy also conflicts with public statements by Amazon executives and their Mission Statement.
 
+\subsubsection{SE Code Tenet 8.03}
+
+\emph{SE Code 8.03}: \ldots produce \underline{accurate}, informative, and well-written \underline{documentation}. 
+
+According to Thesaurus.com, ``accurate'' can also be expressed as ``definitive,'' meaning ``having its fixed and final form; providing a solution or final answer; satisfying all criteria.'' \cite{Thesaurus, Dictionary}  
+
+Let us think of this content policy to be ``documentation'' for the self-publishing platform, where the content policy defines valid and invalid inputs for publishing content on Amazon.  Websters defines documentation as ``the usually printed instructions, comments, and information for using a particular piece or system of computer software or hardware.'' \cite{WebsterOnlineDict} In other words, documentation is the set of instructions for the \emph{end-user}, as opposed to specifications, which are instructions for the \emph{software engineer}. 
+
+Websters further defines ``Accurate'' as ``conforming exactly to truth or to a standard.'' \cite{WebsterOnlineDict} In other words, the documentation should indicate or lead to user instructions that are in line with some consistent standard.  If we rewrite the SE Code to more closely match our system, we are left with the following:
+
+\emph{Substituted SE Code 8.03}: Produce conformant to a standard, informative, and well written content policy.
+
+As it stands, Amazon's policy and the enforcement thereof does not appear to be conformant to any discernable standard.  The policy is not informative because there is great confusion amongst end-users as what exactly falls under the ``offensive material'' content policy.  \cite{KittSelfPubRevolution, ShermanAmazonExecs}  The acceptable content policy is incomplete and ambiguous, which leads to user frustration.  Thus, Amazon's content policy is in conflict with SE Code 8.03.
+
+% TODO: Should probably rework this secdtion to be more badass
+
 \subsubsection{SE Code Tenet 8.07}
 
 \emph{SE Code 8.07}: Not give unfair treatment to anyone because of any irrelevant prejudices.
@@ -201,29 +227,6 @@ The question now depends around whether Amazon has given ``unfair treatment'' du
 
 Amazon's policy and their enforcement of it are in conflict with SE Code Tenet 8.07 because it fosters an environment where authors are treated differently for no rational reason.
 
-% Needs to be continued
-
-%\subsubsection{SE Code Tenet 8.03}
-% Terrifyingly similar to above argument..
-
-%\emph{SE Code 8.03}: \ldots produce \underline{accurate}, informative, and well-written \underline{documentation}. 
-
-%According to Thesaurus.com, ``accurate'' can also be expressed as ``definitive,'' meaning ``having its fixed and final form; providing a solution or final answer; satisfying all criteria.'' \cite{Thesaurus, Dictionary}  
-
-%Let us think of this content policy to be ``documentation'' for the self-publishing platform, where the content policy defines valid and invalid inputs for publishing content on Amazon.  ``Accurate'' is another way of saying ``specific.''  If we rewrite the SE Code to more closely match our system, we are left with the following:
-
-%\emph{Substituted SE Code 8.03}: Produce specific, informative, and well written content policy.
-
-%As it stands, Amazon's policy is not specific.  It is currently impossible for a user of the system to know for sure whether or not a given set of inputs is valid short of trial and error.  The acceptable content policy is incomplete and ambiguous, which leads to user frustration. \\
-
-%\begin{tabular}{| l |}
-%\hline
-%\emph{SE Code 8.03}: Accurate Documentation \\
-%\emph{Amazon's Actions}: Unethical \\
-%\hline
-%\end{tabular}
-%\\
-
 \subsection{Is Amazon Content Policy Censorship} \footnote{DRAFT Note: This section is relatively new and needs cleaning}
 Kay Mathieson, a professor of Philosophy and expert on Information Ethics, defines censorship as follows:
 
@@ -240,7 +243,7 @@ Amazon later de-listed the book, but has refused comment on their reasons for do
 
 Despite this unknown element, Amazon has committed the \emph{act} of censorship as defined by Mathieson based on unknown motivations.
 
-TODO: To be continued with why censorship is immoral. Mathieson Paper helpful.  Possibly need to go to oft-cited Cohen text. Even better, bring in one of the ethical systems (Mill's Autonomy mentioned in Mathieson)
+%TODO: To be continued with why censorship is immoral. Mathieson Paper helpful.  Possibly need to go to oft-cited Cohen text. Even better, bring in one of the ethical systems (Mill's Autonomy mentioned in Mathieson)
 
 %\begin{itemize}
 %   \item Should start with a paragraph showing why the SE Code applies to your focus question.
