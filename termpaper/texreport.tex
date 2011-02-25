@@ -137,7 +137,6 @@ CreateSpace's policy prohibits, among other things:
 
 \end{description}
 
-% I may have to break them down anyway...
 Let's look at the first two sentences in this policy closely.
 
 The first statement, ``What we deem offensive is probably about what you would expect,'' is unclear.  For one, the ``you'' in the sentence is probably intended to refer to the person reading the statement.  However, what one person would expect to be offensive would vary widely from person to person.  In Thai culture, it is considered rude to consume all of the food that is brought to you, because it indicates that the host did not provide enough \cite{EHowThai}.  In Singapore, the possession of chewing gum is a crime, and spitting is also against the law \cite{HotelTravelSingapore}.  What is offensive varies by culture, so a policy that expressive offense in terms of a ``you'' will inevitably lead to misunderstandings and confusion.
@@ -148,7 +147,7 @@ Due to preceding impreciseness, it is possible for enforcers of the content poli
 
 \subsection{Is Amazon's Content Policy Incompatible with ACM SE Code}
 
-The ACM Software Engineering Code of Ethics is a document produced by the ACM/IEEE-CS joint task force on Software Engineering Ethics and Professional Practices in 1999.  It is a document that is meant to guide the ``ethical behavior of and decisions made by \emph{professional software engineers}, including practitioners, educators, managers, supervisors and \emph{policy makers}.'' \cite[Emphasis Mine]{SECode} The ACM SE Code of Ethics is applicable to the issue of whether or not the content guidelines are ethical because Software Engineers working on Amazon's self publishing system are engineering a system that is expected to behave in a congruous manner with the content guidelines.
+The ACM Software Engineering Code of Ethics is a document produced by the ACM/IEEE-CS joint task force on Software Engineering Ethics and Professional Practices in 1999. \cite{SECode} It is a document that is meant to guide the ``ethical behavior of and decisions made by \emph{professional software engineers}, including practitioners, educators, managers, supervisors and \emph{policy makers}.'' \cite[Emphasis Mine]{SECode} The ACM SE Code of Ethics is applicable to the issue of whether or not the content guidelines are ethical because Software Engineers working on Amazon's self publishing system are engineering a system that is expected to behave in a congruous manner with the content guidelines. % TODO: Apparently prove this? Seems reasonable enough
 
 It would be foolish to assume that the content policy was written by software engineers at either Amazon or CreateSpace.  However, regardless of who wrote the content policy, Software Engineers are expected to implement software that will enforce or allow enforcement of the content policy.  The persons who wrote the content policy are clearly ``policy makers,'' and thus the content policy and it's creators should abide by the tenets of the ACM SE Code.
 
@@ -188,9 +187,19 @@ In it's current state, Amazon's Content Policy is in conflict with SE Code Tenet
 
 \emph{SE Code 8.07}: Not give unfair treatment to anyone because of any irrelevant prejudices.
 
-As of February 2010, Amazon continues to list Lolita \cite{AmazonLolitaDTPListing}, a book that centers around an older man's attempt to seduce a 12-year old girl, but has removed similar stories by Selina Kitt and other authors. \cite{KittSelfPubRevolution} 
+Although the applicability of this tenet should be obvious, it can be rewritten as follows:
 
-TO BE EXPANDED
+\emph{Substituted SE Code 8.07}: [Amazon should] not give unfair treatment to any authors because of any irrelevant prejudices.
+
+It is indisputable that Amazon is treating certains authors differently than others.  As of February 2010, Amazon continues to list Lolita \cite{AmazonLolitaDTPListing}, a book that centers around an older man's attempt to seduce a 12-year old girl, but has removed similar stories by Selina Kitt and other authors. \cite{KittSelfPubRevolution}  The primary difference between the two categories of books is that Lolita was published in 1950 \cite{WikipediaLolita} and is considered to be a literary classic \cite{MLTop100}.  By contrast, author Kitt is considerably less well known. Although as of \date{February 24, 2011}, one of Kitt's novels, \emph{Babysitting the Baumgartners}, is the 20th most popular ``erotica'' novel in both print and digital formats on Amazon.com and 1300th overall amongst all digital book content. \cite{AmazonBabysittingListing} Ms. Kitt's works may not be critically rated on the same level as Vladimir Nabokov but notoriety is no basis for selectively listing novels.
+
+Another difference of note between Kitt and Nabokov is that Kitt is a self-publisher through CreateSpace \cite{KittSelfPubRevolution}, while Lolita is published by a traditional New York publishing house, Vintage \cite{WorldCatLolita}. It is possible that due to Lolita's status as a traditionally published novel with a large publishing firm standing behind it it was afforded more protections than Kitt's novel.  
+
+It is important to note that SE Code 8.07 does not state that software engineers must treat all persons equally.  Rather, the code states that they must ``not give unfair treatment'' due to ``irrelevant prejudices.'' Websters defines unfair as ``not equitable in business dealings.'' \cite{WebstersOnlineDict}  Amazon appears to be holding authors to different standards in ``business dealings,'' such that self-published authors find themselves de-listed, where more established authors and publishers do not.  However, the SE Code only applies if unfair treatment occurs due to ``irrelevant prejudices.''  Websters defines prejudice as ``an irrational attitude of hostility directed against an individual, a group, a race, or their supposed characteristics.'' \cite{WebsterOnlineDict} Affected authors appear to fall under the ``group'' of self-publishing erotic authors, and de-listing the content of these authors is certainly a hostile action against the livelihood of the authors. 
+
+The question now depends around whether Amazon has given ``unfair treatment'' due to ``irrelevant prejudices.''  Unfortunately, Amazon has not issued any public statements regarding the de-listing.  As a result, their rationale and purpose behind the de-listings is unknown, forcing speculation.  It is likely that Amazon has refused to comment publicly to avoid setting precedent for their action and draw more criticism in the future.  In this case, their intention is clearly to create an environment that allows for inconsistent and arbitrary application of the content policy, which is opposite of the behavior specified by the SE Code.
+
+Amazon's policy and their enforcement of it are in conflict with SE Code Tenet 8.07 because it fosters an environment where authors are treated differently for no rational reason.
 
 % Needs to be continued
 
