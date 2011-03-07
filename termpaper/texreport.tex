@@ -1,33 +1,26 @@
-% CSC 300: Professional Responsibilities
-% Dr. Clark Turner
-
-% Two Column Format 
 \documentclass[11pt]{article}
-%this allows us to specify sections to be single or multi column so that things like title page and table of contents are single column 
+
 \usepackage{multicol}  
 
 \usepackage{setspace}
 \usepackage{url}
 
-%%% PAGE DIMENSIONS
-\usepackage{geometry} % to change the page dimensions
+\usepackage{geometry} 
 \geometry{letterpaper} 
-
 
 \begin{document}
 
-\title{\vfill Censorship in Self-Publishing} %\vfill gives us the blank space at the top of the page
+\title{\vfill Censorship in Self-Publishing}
 \author{
 By Mark Gius\vspace{10pt} \\ 
 CSC 300: Professional Responsibilities\vspace{10pt} \\ 
 Dr. Clark Turner\vspace{10pt} \\ 
 }
-%\date{October 22, 2010} %Or use \today for today's Date
-\date{\today}
+\date{March 7, 2011}
 
 \maketitle
 
-\vfill  %in combination with \newpage this forces the abstract to the bottom of the page
+\vfill
 \begin{abstract}
 Amazon.com is one of the largest sellers of goods and services on the internet.  In 2003, Amazon acquired CreateSpace (formerly CustomFlix) and BookSurge \cite{CustomFlixAcquisition, BookSurgeAcquisition}, which provide ``On-Demand'' publishing services for self-publishing authors. The rise of self publishing services like CreateSpace have lowered the bar for small authors to become published and listed on sites like Amazon. This has allowed more authors to attempt to make a living out of writing.
 
@@ -40,23 +33,17 @@ Is it appropriate for publishers or distributors of books to discriminate what t
 Full Disclosure: I am a current employee of CreateSpace, a fully owned subsidiary of Amazon and the publisher of several books that have been de-listed from Amazon's store. To the best of my knowledge, this paper contains no information that is not available to the public.
 \end{abstract}
 
-\thispagestyle{empty} %remove page number from title page
+\thispagestyle{empty} 
 \newpage
 
-%Create a table of contents with all headings of level 3 and above.  
-%http://en.wikibooks.org/wiki/LaTeX/Document_Structure#Table_of_contents has info on customizing the table of contents
-\thispagestyle{empty}  %Remove page number from TOC
+\thispagestyle{empty}  
 \tableofcontents
 
 \newpage
 
-%start 2 column format
 \begin{multicols}{2}
-%Start numbering first page of content as page 1
 \setcounter{page}{1}
-%%%%%%%%%%%%%%%%%%%%
-%%% Known Facts  %%%
-%%%%%%%%%%%%%%%%%%%%
+
 \section{Facts}
 
 In November 2011 a book entitled ``The Pedophile's Guide to Love and Pleasure: a Child-lover's Code of Conduct'' was offered for sale through Amazon's Kindle store.  The book reached 150,000 on the Amazon best seller list \cite{TechCrunchAmazonCensorship} before public outcry and attention to the issue raised the book to as high 80 on the Amazon best seller list before it was removed entirely from Amazons' listings \cite{TechCrunchAmazonPedophilia}.
@@ -71,7 +58,7 @@ Amazon currently sells Kindle and physical copies of \underline{Lolita}, a novel
 
 Amazon and CreateSpace's Member and Content Agreements clearly state that published content can be removed at Amazon's discretion \cite{CreateSpaceMemberAgreement,CreateSpaceContentGuidelines,AmazonKDPContentGuidelines}, and as a private entity Amazon is not bound by the First Amendment's protections of speech. 
 
-All of the books de-listed by Amazon appear to be self-published titles through either Amazon Direct to Publishing (Kindle) or CreateSpace (Print on Demand).  Amazon is not the only company offering self-publishing services to authors. Competitors include:
+All of the books de-listed by Amazon appear to be self-published titles through either Amazon Direct Publishing (Kindle) or CreateSpace (Print on Demand).  Amazon is not the only company offering self-publishing services to authors. Competitors include:
    \begin{description}
    \item[Lulu.com] Provides self-publishing services for books that are very similar to that of Amazon/CreateSpace.  Their content policy also prohibits certain types of content, including obscene or offensive material. \cite{LuluMemberAgreement}
 
@@ -86,37 +73,29 @@ Because all of the de-listed titles appear to be self-published a short explanat
 
 \subsubsection{Traditional Publishing}
 
-In traditional publishing an author is signed to a publisher.  In exchange, the publisher then offers a number of services to the author.  These services include editing, cover design, art design, and marketing. \cite{WhatPublisherDoes}  At the very end of this process the publisher arranges to have books printed and distributed to retailers. \cite{WhatPublisherDoes}  By the time a book has reached store shelves, the publisher has invested time and money into the author and their work.  The publisher then takes a cut of the book sales profits in exchange for their services.
+In traditional publishing an author is signed to a publisher and agrees to give a substantial amount of the profits to the publisher.  In exchange, the publisher then offers a number of services to the author.  These services include editing, cover design, art design, and marketing. \cite{WhatPublisherDoes}  At the very end of this process the publisher arranges to have books printed and distributed to retailers. \cite{WhatPublisherDoes}  By the time a book has reached store shelves, the publisher has invested time and money into the author and their work. 
 
 \subsubsection{Traditional Self-Publishing}
 
-When an author chooses to self-publish a book, all of these tasks are handled by the author himself.  The author may choose to perform some tasks themselves, such as editing and cover design, while hiring companies or individuals to perform marketing or distribution tasks. The author takes on all of the cost and risk associated with publishing the book, but keeps all of the profit.
+When an author chooses to self-publish a book, all of the tasks that would normally be handled by a publishing house, such as copy-editing and marketing, are handled by the author himself.  The author may choose to perform some tasks themselves, such as editing and cover design, while hiring companies or individuals to perform marketing or distribution tasks. The author takes on all of the cost and risk associated with publishing the book, but also keeps all of the profit.
 
 \subsubsection{Print on Demand Self-Publishing}
 
-A somewhat recent development in the self-publishing world is Print on Demand  (POD) publishing.  Prior to POD, traditional and self-publishers were required to print large quantities of books at a time to reamin cost-effective. This was especially troublesome for self-publishing authors who were forced to order several thousand dollars worth of books \cite{EHowSelfPub} from printers with no guarantee that the book would ever sell.  Print on Demand uses high quality digital printers to make runs of even a single copy economical. Authors are still responsible for editing and proofing their work, but the initial investment in large print runs can be largely avoided.
+A somewhat recent development in the self-publishing world is Print on Demand  (POD) publishing.  Prior to POD, traditional and self-publishers were required to print large quantities of books at a time to remain cost-effective. This was especially troublesome for self-publishing authors who were forced to order several thousand dollars worth of books \cite{EHowSelfPub} from printers with no guarantee that the book would ever sell.  Print on Demand uses high quality digital printers to make runs of even a single copy economical. Authors are still responsible for editing and proofing their work, but the initial investment in large print runs can be largely avoided.
 
 \subsubsection{eBook Digital Distribution}
 
-The latest publishing method available to authors is digital distribution.  Although digital copies of books have been available for some time through sites such as Project Gutenberg \cite{ProjectGutenberg} the release of popular book readers (commonly referred to as eReaders) such as Amazon's Kindle or Barnes and Noble's Nook have popularized the format.  When an author publishes their book through a digital distribution channel, such as the Kindle Store, they avoid the cost of printing the book entirely and rely on the owner of the digital distribution channel for distribution.  The author is still responsible for tasks such as editing and cover art.  The ``distributor/printer'' has very little overhead as well.  Rather than needing to store a physical product that takes up space in a warehouse or store shelves, eReaders consume digital files that can be stored very cheaply on hard disks.
+The latest publishing method available to authors is digital distribution.  Although digital copies of books have been available for some time through sites such as Project Gutenberg \cite{ProjectGutenberg} the release of popular book readers (commonly referred to as eReaders) such as Amazon's Kindle and Barnes and Noble's Nook have popularized the format.  When an author publishes their book through a digital distribution channel, such as the Kindle Store, they avoid the cost of printing the book entirely and rely on the owner of the digital distribution channel for distribution.  The author is still responsible for tasks such as editing and cover art.  The ``distributor/printer'' has very little overhead as well.  Rather than needing to store a physical product that takes up space in a warehouse or store shelves, eReaders consume digital files that can be stored very cheaply on hard disks.
 
-% Keep this para?
-When a POD or digital distribution title is removed from circulation the distributor faces very little loss due to minimal investment in a title.  If a traditionally published title were to be de-listed and banned the publisher could lose a significant amount of money due to the investment in the title. 
+When a POD or digital distribution title is removed from circulation the distributor faces very little loss due to minimal investment in a title.  If a traditionally published title were to be de-listed and banned the publisher could lose a significant amount of money due to the investment in the title.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Research Question %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Research Question}
 Is the Offensive Material section of Amazon's Self Publishing Content Policy ethical?
 
 \subsection{Why is this important?}
 
-% internet low barrier needs citcation
-Technologies like Print on Demand and digital distribution lower the barrier to publishing books.  As time goes on more and more authors will publish ever increasing quantities of books.  The lower costs will also make publication of niche topics more cost effective.  These niche topics are likely to offend portions of the population who would rather them not be published.  Much as the internet's low barrier of entry in cost and effort led to an explosion of niche communities and web sites for every conceivable topic \cite{CitationNeeded}, the decreasing barrier to entry and cost of publishing books may lead to an increase in book topic variety.  The rights of authors to publish should be examined early to prevent censoring of material deemed ``offensive.''
-
-%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Extant Arguments from External Sources %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%
+% internet low barrier needs citation
+Technologies like Print on Demand and digital distribution lower the barrier to publishing books.  As time goes on more and more authors will publish ever increasing quantities of books.  The lower costs will also make publication of niche topics more cost effective.  These niche topics are likely to offend portions of the population who would rather them not be published.  Much as the internet's low barrier of entry in cost and effort led to an explosion of niche communities and web sites for every conceivable topic, the decreasing barrier to entry and cost of publishing books may lead to an increase in book topic variety.  The rights of authors to publish should be examined early to prevent censoring of material deemed ``offensive.''
 
 \section{Arguments}
 
@@ -136,12 +115,9 @@ Erik Sherman, a writer for BNET, believes that Amazon's current public policy is
 
 SJ, a blogger, purchased one of the de-listed books, ``The Pedophile's Guide to Love and Pleasure,'' so that she could address concerns that all opposed to the book were doing so on false grounds.  She finds the book ``reprehensible,'' and determined that the book in question was a ``how-to-not-get-caught.'' \cite{iasshole}
 
-%%%%%%%%%%%%%%%%
-%%% Analysis %%%
-%%%%%%%%%%%%%%%%
 \section{Analysis}
 
-In the following analysis, there may be some mixing of the company names Amazon and CreateSpace, especially in the context of quoted elements.  CreateSpace is a fully-owned subsidiary of Amazon.  CreateSpace provides self-publishing services for authors.  In general, I will refer to both entities as Amazon for simplicity, unless reason exists to distinguish them.
+In the following analysis, there may be some mixing of the company names Amazon and CreateSpace, especially in the context of quoted elements.  CreateSpace is a fully-owned subsidiary of Amazon.  CreateSpace provides self-publishing services for authors and facilitates listing titles on Amazon.com.  In general, I will refer to both entities as Amazon for simplicity, unless reason exists to distinguish them.
 
 \subsection{Content Policy}
 
@@ -233,8 +209,6 @@ Websters further defines ``Accurate'' as ``conforming exactly to truth or to a s
 
 As it stands, Amazon's policy and the enforcement thereof does not appear to be conformant to any discernable standard.  The policy is not informative because there is great confusion amongst end-users as what exactly falls under the ``offensive material'' content policy.  \cite{KittSelfPubRevolution, ShermanAmazonExecs}  The acceptable content policy is incomplete and ambiguous, which leads to user frustration.  Thus, Amazon's content policy is in conflict with SE Code 8.03.
 
-% TODO: Should probably rework this secdtion to be more badass
-
 \subsubsection{SE Code Tenet 8.07}
 
 \emph{SE Code 8.07}: Not give unfair treatment to anyone because of any irrelevant prejudices.
@@ -243,70 +217,64 @@ Although the applicability of this tenet should be obvious, it can be rewritten 
 
 \emph{Substituted SE Code 8.07}: [Amazon should] not give unfair treatment to any authors because of any irrelevant prejudices.
 
-It is indisputable that Amazon is treating certain authors differently than others.  As of February 2010, Amazon continues to list Lolita \cite{AmazonLolitaDTPListing}, a book that centers around an older man's attempt to seduce a 12-year old girl, but has removed similar stories by Selina Kitt and other authors. \cite{KittSelfPubRevolution}  The primary difference between the two categories of books is that Lolita was published in 1950 \cite{WikipediaLolita} and is considered to be a literary classic \cite{MLTop100}.  By contrast, author Kitt is considerably less well known, although as of \date{February 24, 2011}, one of Kitt's novels, \emph{Babysitting the Baumgartners}, is the 20th most popular ``erotica'' novel in both print and digital formats on Amazon.com and 1300th overall amongst all digital book content. \cite{AmazonBabysittingListing} Ms. Kitt's works may not be critically rated on the same level as Vladimir Nabokov but notoriety is no basis for selectively listing novels.
+It is indisputable that Amazon is treating certain authors differently than others.  As of February 2010, Amazon continues to list Vladimir Nabokov's \emph{Lolita} \cite{AmazonLolitaDTPListing}, a book that centers around an older man's attempt to seduce a 12-year old girl, but has removed \emph{Under Mr. Nolan's Bed}, a story about a father engaging in sexual situations with his underage daughter and her friend, by Selina Kitt. \cite{KittSelfPubRevolution}  
 
-Another difference of note between Kitt and Nabokov is that Kitt is a self-publisher through CreateSpace \cite{KittSelfPubRevolution}, while Lolita is published by Vintage, a traditional New York publishing house.  \cite{WorldCatLolita} It is possible that due to Lolita's status as a traditionally published novel with a large publishing firm standing behind it the novel was afforded more protections than Kitt's novel.  
+There are two major differences between Ms. Kitt's book and Mr. Nabokov's.  The first is that \emph{Lolita} was published in 1950 \cite{WikipediaLolita} and is considered to be a literary classic \cite{MLTop100}, whereas \emph{Under Mr. Nolan's Bed} was first published in 2010.  Ms. Kitt's book, republished via Barnes and Noble's PubIt! service after being de-listed by Amazon.com, currently holds a four out of five star rating based on over three hundred reviews. \cite{UnderMrNolan} One of Kitt's other stories, \emph{Babysitting the Baumgartners}, is still available on Amazon.com and as of \date{February 24, 2011} is the 20th most popular ``erotica'' novel in both print and digital formats on Amazon.com \cite{AmazonBabysittingListing}.  Ms. Kitt and her works may not be critically rated on the same level as Vladimar Nabokov and \emph{Lolita} but Amazon has not provided any public policy or statement that indicates that critical reception and notoriety are factors in determining whether or not to distribute a title.
 
-It is important to note that SE Code 8.07 does not state that software engineers must treat all persons equally.  Rather, the code states that they must ``not give unfair treatment'' due to ``irrelevant prejudices.'' Websters defines unfair as ``not equitable in business dealings.'' \cite{WebsterOnlineDict}  Amazon appears to be holding authors to different standards in ``business dealings,'' such that self-published authors find themselves de-listed, where more established authors and publishers do not.  However, the SE Code only applies if unfair treatment occurs due to ``irrelevant prejudices.''  Websters defines prejudice as ``an irrational attitude of hostility directed against an individual, a group, a race, or their supposed characteristics.'' \cite{WebsterOnlineDict} Affected authors appear to fall under the ``group'' of self-publishing erotic authors, specifically those that deal with taboo situations.  De-listing the content of these authors is certainly a hostile action against the livelihood of the authors because if the authors are not listed, they are not making.
+The second notable difference between the two works is that \emph{Under Mr. Nolan's Bed} was self-published by Kitt through CreateSpace \cite{KittSelfPubRevolution}, while Lolita is published by Vintage, a traditional New York publishing house.  \cite{WorldCatLolita} It is possible that due to Lolita's status as a traditionally published novel with a large publishing firm standing behind it the novel was afforded more protections than Kitt's novel.  
+
+It is important to note that SE Code 8.07 does not state that software engineers must treat all persons equally.  Rather, the code states that they must ``not give unfair treatment'' due to ``irrelevant prejudices.'' Websters defines unfair as ``not equitable in business dealings.'' \cite{WebsterOnlineDict}  Amazon appears to be holding authors and their titles to different standards in ``business dealings,'' such that self-published authors and their works find themselves de-listed, where more established authors and publishers do not.  
+
+However, the SE Code only applies if unfair treatment occurs due to ``irrelevant prejudices.''  Websters defines prejudice as ``an irrational attitude of hostility directed against an individual, a group, a race, or their supposed characteristics.'' \cite{WebsterOnlineDict} Affected authors appear to fall under the ``group'' of self-publishing erotic authors, specifically those that deal with taboo situations.  De-listing the content of these authors is certainly a hostile action against the livelihood of the authors because if the authors are not listed, they are not making money.
 
 The question now depends around whether Amazon has given ``unfair treatment'' due to ``irrelevant prejudices.''  Unfortunately, Amazon has not issued any public statements regarding the de-listing.  Because of this, their rationale and purpose behind the de-listings is unknown, forcing speculation.  It is likely that Amazon has refused to comment publicly to avoid setting precedent for their action and draw more criticism in the future.  In this case, it is clearly their intention to create an environment that allows for inconsistent and arbitrary application of the content policy, which is opposite of the behavior specified by the SE Code.
 
-Amazon's policy and their enforcement of it are in conflict with SE Code Tenet 8.07 because it fosters an environment where authors are treated differently for no rational reason.
+Amazon's policy and their enforcement of it are in conflict with SE Code Tenet 8.07 because it fosters an environment where authors can be, and are, treated differently for no rational reason.
 
-\subsection{Is Amazon' Content Policy Censorship} \footnote{DRAFT Note: This section is relatively new and needs cleaning}
+\subsection{Amazon, Censorship and Kant's 2nd Categorical Imperative}
+
 Kay Mathieson, a professor of Philosophy and expert on Information Ethics, defines censorship as follows:
 
-``To censor is to restrict or limit access to an expression, portion of an expression, or category of expression, which has been made public by its author, based on the belief that it will be a bad thing if people access the content of that expression.'' \cite{MathiesenCensorship}
+{\addtolength{\leftskip}{6mm}
 
-% this is flimsy..
-In her paper, Mathieson also explains her position on the intention of communication, namely that ``the goal of freedom of expression is not that a speaker gets to speak, but that people are able to communicate with each other.''  In other words, even if a person is not preventing a speaker from speaking, they may be preventing a listener from listening and such an action is still censorship.  Amazon's content policy does not stop authors from creating or speaking their content, but it does block them from distributing it and thus reaching willing participants.  Thus, Amazon's access restricts or limits access to these expressions.
+``To censor is to \emph{restrict or limit access} to an expression, portion of an expression, or category of expression, which has been \emph{made public} by its author, based on the belief that it will be a \emph{bad thing} if people access the content of that expression.'' \cite[Emphasis Mine]{MathiesenCensorship}
+
+}
+
+In her paper, Mathieson also explains her position on the intention of communication, namely that ``the goal of freedom of expression is not that a speaker gets to speak, but that people are able to communicate with each other.''   \cite{MathiesenCensorship} In other words, even if a person is not preventing a speaker from speaking, they may be preventing a listener from listening.  By interfering with free communication between two willing parties an agent has engaged in censorship. 
+
+Amazon's content policy does not stop authors from writing what they please and attempting to sell it.  However, by de-listing their content Amazon is creating a barrier between the writer and their willing readers.  This wall is particularly galling because Amazon allowed the book to be distributed for a time, then removed it without explanation.  Amazon's actions restrict access to these expressions after initially allowing them.
 
 The very act of publishing by an author in effect makes the work public.  The question then falls on whether or not Amazon considers this speech to be a ``bad thing.''  Prior to de-listing ``The Pedophile's Guide to Love and Pleasure'' Amazon issued the following statement:
 
+{\addtolength{\leftskip}{6mm}
+
 ``Amazon believes it is censorship not to sell certain books simply because we or others believe their message is objectionable.  Amazon does not support or promote hatred or criminal acts, however, we do support the right of every individual to make their own purchasing decisions.'' \cite{TechCrunchAmazonCensorship}
 
-Amazon later de-listed the book, but has refused comment on their reasons for doing so.  As a result, it is impossible to determine if Amazon removed the book from their site based on the belief that ``it will be a bad thing if people access the content.''  Mathieson discusses censorship of content due to ``[moral disapproval] of what persons might \emph{do} with [the] information.'' \cite{MathiesenCensorship}  It is possible that Amazon does not believe a book may be bad in and of itself, but does not wish to contribute to truly illegals acts that may arise from such a book.  Again, without confirmation from Amazon, we cannot know what their motivations were for de-listing the book.
+}
 
-Despite this unknown element, Amazon has committed the \emph{act} of censorship as defined by Mathieson based on unknown motivations.
+Based on that statement, Amazon appears to believe that delivering content to consumers is more important than restricting access to potentially objectionable content. However, Amazon later de-listed the book without public explanation.  Because of the lack of public explanation, it is impossible to determine the exact reason that Amazon removed the book from distribution.  However, Mathieson discusses in her paper censorship of content due to ``[moral disapproval] of what persons might \emph{do} with [the] information.'' \cite{MathiesenCensorship} Amazon may be concerned that distribution of this title, and others with similar messages, may have a negative impact on society.
 
-%TODO: To be continued with why censorship is immoral. Mathieson Paper helpful.  Possibly need to go to oft-cited Cohen text. Even better, bring in one of the ethical systems (Mill's Autonomy mentioned in Mathieson)
+These actions appear to be in violation of Deontological principles.  In particular, they run contrary to Kant's second categorical imperative:
 
-%\begin{itemize}
-%   \item Should start with a paragraph showing why the SE Code applies to your focus question.
-%   \item Sub-headings to delineate your lines of reasoning are required. 
-%   \item All arguments must be thoroughly supported by reason and logic. 
-%   \item All claims must be supported by reputable primary sources and formal data. 
-%   \item SE Code must be central to the argumentation
-%   \begin{itemize}
-%      \item You should have 2-4 distinct sections of the SE code utilized in your analysis
-%      \begin{itemize}
-%         \item If section 1 is central to your argument, it is only one of the code sections covered. Do not rely solely on section one. Ex: 1.01-1.04 will not suffice for all of your SE Code based arguments and citations. 
-%         \item If discussion about Òpublic goodÓ is used, there must be data to support it. Simply writing Òit benefits the general public because it would make many people happyÓ is insufficient.
-%      \end{itemize}
-%   \end{itemize}     
-%   \item Utilitarian and deontological analysis must be present but not be separate sections 
-%   \item Class reading must be referenced as appropriate (at least one paper must be used as the basis of one of the arguments). 
-%   \item There should be a clear cohesiveness to the analysis such that each argument logically flows into the next and gently directs the reader toward your conclusion while implicitly providing answers to any doubts they may have through logic and data.
-%   \item Opinions > dev/null. \cite{handout}  
-%\end{itemize}
+{\addtolength{\leftskip}{6mm}
 
-%Look at Jason Anderson's how to write a term paper (currently linked as the paper template) for information on how to write this section.  An example of possible sections follows
-%\subsection{Why the SE Code Applies}
-%\subsection{Argument 1}
-%\subsubsection{Code principle 1 that applies}
-%\subsubsection{Code principle 2 that applies}
-%\subsection{Argument 2}
-%\subsubsection{Code principle 1 that applies}
-%\subsubsection{Code principle 2 that applies}
+``Act so that you treat humanity, both in your own person and in that of another, always as an end and never merely as a means.'' \cite{KantCategorical}
 
-%\subsubsection*{}
-%Remember to weave the class papers and other ethical systems arguments in with the se code arguments they shouldn't be separate sections.  
+}
+
+In more plain english, one should never use a person to further their own goals, especially at the expense of the other person. 
+
+At first, Amazon's relationship with authors is mutually beneficial.  The author provides a product for Amazon to sell and Amazon facilitates distribution of the author's work.  Because neither is working against each other and both benefit the two parties are both ``ends.''  The author helps Amazon fulfill it's goal of generating revenue and profit and Amazon helps the author to generate income and distribute his ideas in the marketplace.  Each's actions treat each other as an end.
+
+When Amazon censors books, and especially when they de-list them after offering them for sale publically, it becomes apparent that Amazon's interest in self-publishing authors is as a means to an end rather than an end in itself.  Specifically, self-publishing authors are a means to earning more money and improving Amazon's selection.  Any benefit to the author appears to be irrelevant to Amazon's decisions.  If Amazon felt that an author was an end in itself they would not remove an authors book from circulation, or at the very least decline to list it initially.
+
 
 %%%%%%%%%%%%%%%%
 %%% Conclusion %%%
 %%%%%%%%%%%%%%%%
 \section{Conclusion}
-Amazon's Content Policy for self-published works are unethical because they do not conform to the ACM SE Code of Ethics requirements for documentation, specification and equal treatment, and promotes censorship of works.  To bring their system in line with the SE Code of Ethics, Amazon should clarify their Content Policies such that authors can know prior to submission whether their content meets the guidelines.  To solve the censorship issue, Amazon should allow self-publishers to sell any content that is not strictly illegal.
+Amazon's Content Policy for self-published works are unethical because they do not conform to the ACM SE Code of Ethics requirements for documentation, specification and equal treatment, and promotes censorship of works in violation of deontological princicples.  To bring their system in line with the SE Code of Ethics, Amazon should clarify their Content Policies such that authors can know prior to submission whether their content meets the guidelines.  To solve the censorship issue, Amazon should allow self-publishers to sell any content that is not strictly illegal.
 
 %end the two column format 
 \end{multicols}
